@@ -27,11 +27,47 @@ header {
 	min-height: 50px;
 	
 	.top-header {
-		min-height: 250px;
+		display: flex;
+		flex-direction: row;
+		padding-top: 50px;
+		background-color: #eee;
+
+		.logo {
+
+			margin-bottom: 30px;
+		}
+		
+		.button-group {
+			display: inline-flex;
+			margin-top: 15px;
+			margin-left: 45px;
+
+			.btn {
+				display: flex;
+				margin-left: 15px;
+				margin-right: 5px;
+
+				.ico {
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background-color: $orange;
+				}
+				.title {
+					margin-left: 7px;
+					margin-top: 7px	;
+					font-family: $font_family_btn;
+					font-size: 14px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
 	}
 
 	.main-menu {
 		.wrapper {
+background: url(img/decor-bg.png) repeat-x;
 			min-height: 85px;
 		}
 	}

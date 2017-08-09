@@ -20,8 +20,34 @@ body {
 header {
   min-height: 50px; }
   header .top-header {
-    min-height: 250px; }
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    background-color: #eee; }
+    header .top-header .logo {
+      margin-bottom: 30px; }
+    header .top-header .button-group {
+      display: inline-flex;
+      margin-top: 15px;
+      margin-left: 45px; }
+      header .top-header .button-group .btn {
+        display: flex;
+        margin-left: 15px;
+        margin-right: 5px; }
+        header .top-header .button-group .btn .ico {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-color: #ff5b23; }
+        header .top-header .button-group .btn .title {
+          margin-left: 7px;
+          margin-top: 7px;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          display: inline-block;
+          vertical-align: middle; }
   header .main-menu .wrapper {
+    background: url(img/decor-bg.png) repeat-x;
     min-height: 85px; }
 
 main .slider {
