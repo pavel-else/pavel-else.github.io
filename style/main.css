@@ -1,8 +1,12 @@
+ul, li {
+  margin: 0;
+  padding: 0; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: PT Sans, sans-serif;
-  color: #333;
+  color: #fff;
   font-size: 13px; }
 
 .tmp {
@@ -49,8 +53,29 @@ header {
   header .main-menu {
     background-image: url("../img/decor-bg.png");
     background-repeat: repeat; }
-    header .main-menu .wrapper {
-      min-height: 85px; }
+    header .main-menu .flex-container {
+      display: flex; }
+      header .main-menu .flex-container li {
+        list-style: none;
+        display: flex;
+        border-right: 1px solid lightgray; }
+        header .main-menu .flex-container li :first-child {
+          border-left: 1px solid lightgray; }
+        header .main-menu .flex-container li a {
+          display: flex;
+          box-sizing: border-box;
+          height: 85px;
+          padding: 10px;
+          align-items: center;
+          font-family: "Roboto", sans-serif;
+          color: #fff;
+          font-size: 20px;
+          text-decoration: none;
+          text-transform: uppercase; }
+      header .main-menu .flex-container .special {
+        margin-left: auto; }
+        header .main-menu .flex-container .special a {
+          color: #ff5b23; }
 
 main .slider {
   min-height: 300px; }
