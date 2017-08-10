@@ -33,7 +33,6 @@ header {
 		background-color: #eee;
 
 		.logo {
-
 			margin-bottom: 30px;
 		}
 		
@@ -66,8 +65,10 @@ header {
 	}
 
 	.main-menu {
+		background-image: url("../img/decor-bg.png");
+		background-repeat: repeat;
+
 		.wrapper {
-background: url(img/decor-bg.png) repeat-x;
 			min-height: 85px;
 		}
 	}

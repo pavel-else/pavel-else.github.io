@@ -46,9 +46,11 @@ header {
           font-size: 14px;
           display: inline-block;
           vertical-align: middle; }
-  header .main-menu .wrapper {
-    background: url(img/decor-bg.png) repeat-x;
-    min-height: 85px; }
+  header .main-menu {
+    background-image: url("../img/decor-bg.png");
+    background-repeat: repeat; }
+    header .main-menu .wrapper {
+      min-height: 85px; }
 
 main .slider {
   min-height: 300px; }
