@@ -26,8 +26,7 @@ header {
   header .top-header {
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
-    background-color: #eee; }
+    padding-top: 50px; }
     header .top-header .logo {
       margin-bottom: 30px; }
     header .top-header .button-group {
@@ -52,15 +51,14 @@ header {
           vertical-align: middle; }
   header .main-menu {
     background-image: url("../img/decor-bg.png");
-    background-repeat: repeat; }
+    background-repeat: repeat;
+    background-position: left top; }
     header .main-menu .flex-container {
       display: flex; }
       header .main-menu .flex-container li {
         list-style: none;
         display: flex;
-        border-right: 1px solid lightgray; }
-        header .main-menu .flex-container li :first-child {
-          border-left: 1px solid lightgray; }
+        border-right: 1px solid #777; }
         header .main-menu .flex-container li a {
           display: flex;
           box-sizing: border-box;
@@ -72,13 +70,21 @@ header {
           font-size: 20px;
           text-decoration: none;
           text-transform: uppercase; }
+      header .main-menu .flex-container li:first-child {
+        border-left: 1px solid #777; }
       header .main-menu .flex-container .special {
-        margin-left: auto; }
+        margin-left: auto;
+        border-left: 1px solid #777; }
         header .main-menu .flex-container .special a {
           color: #ff5b23; }
 
 main .slider {
-  min-height: 300px; }
+  height: 900px;
+  width: 2000px;
+  position: relative;
+  top: -300px;
+  z-index: -2;
+  background-image: url("../img/slide-1.jpg"); }
 main .content {
   min-height: 800px; }
 main .second-menu .wrapper {
