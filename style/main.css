@@ -1,4 +1,4 @@
-ul, li {
+ul, li, h1, h2, span {
   margin: 0;
   padding: 0; }
 
@@ -82,12 +82,64 @@ header {
 main .slider {
   height: 900px;
   width: 2000px;
-  position: relative;
-  top: -300px;
+  position: absolute;
+  top: -250px;
   z-index: -2;
   background-image: url("../img/slide-1.jpg"); }
 main .content {
-  min-height: 800px; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 800px;
+  margin-top: 250px;
+  background-color: gray; }
+  main .content .card {
+    box-sizing: border-box;
+    min-height: 320px;
+    min-width: 570px;
+    margin-bottom: 30px;
+    border: 1px solid white;
+    border-top: 4px solid #ff5b23; }
+    main .content .card img {
+      position: absolute; }
+    main .content .card .card-description {
+      position: absolute;
+      padding: 15px 30px; }
+      main .content .card .card-description h2 {
+        margin: 0;
+        font-size: 46px;
+        font-weight: bold;
+        text-transform: uppercase; }
+        main .content .card .card-description h2 span {
+          font-weight: normal; }
+      main .content .card .card-description p {
+        display: block;
+        width: 350px;
+        font-size: 14px;
+        font-weight: normal; }
+    main .content .card .button {
+      border: none;
+      margin-top: 230px;
+      margin-left: 30px;
+      padding: 0;
+      opacity: 0.8; }
+      main .content .card .button span {
+        display: inline-block;
+        line-height: 60px;
+        margin: 5px 0;
+        text-transform: uppercase;
+        background-color: #ff5b23;
+        margin: 0;
+        padding-left: 15px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold; }
+      main .content .card .button span:after {
+        content: ">>";
+        display: inline-block;
+        padding: 0 15px;
+        margin-left: 15px;
+        background-color: black; }
 main .second-menu .wrapper {
   min-height: 85px; }
 main .product-block {
