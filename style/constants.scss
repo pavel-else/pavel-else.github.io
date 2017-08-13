@@ -1,12 +1,14 @@
-$font_family_main: PT Sans, sans-serif;
 $roboto: 'Roboto', sans-serif;
+$lora : 'Lora', serif;
 $font_size: 13px;
 
 $primary-color: #fff;
 $orange: #ff5b23;
+$gray: #262626;
 $border-menu: #777;
+$card-background: #f6f6f6;
 
-ul, li, h1, h2, span {
+ul, li, h1, h2, span, p {
 	margin: 0;
 	padding: 0;
 }

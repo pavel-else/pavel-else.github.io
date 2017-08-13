@@ -1,11 +1,11 @@
-ul, li, h1, h2, span {
+ul, li, h1, h2, span, p {
   margin: 0;
   padding: 0; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: PT Sans, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 13px; }
 
@@ -90,15 +90,13 @@ main .content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 800px;
   margin-top: 250px;
-  background-color: gray; }
+  margin-bottom: 25px; }
   main .content .card {
     box-sizing: border-box;
     min-height: 320px;
     min-width: 570px;
     margin-bottom: 30px;
-    border: 1px solid white;
     border-top: 4px solid #ff5b23; }
     main .content .card img {
       position: absolute; }
@@ -107,7 +105,7 @@ main .content {
       padding: 15px 30px; }
       main .content .card .card-description h2 {
         margin: 0;
-        font-size: 46px;
+        font-size: 48px;
         font-weight: bold;
         text-transform: uppercase; }
         main .content .card .card-description h2 span {
@@ -131,19 +129,77 @@ main .content {
         background-color: #ff5b23;
         margin: 0;
         padding-left: 15px;
-        font-size: 18px;
+        font-size: 20px;
         color: #fff;
         font-weight: bold; }
       main .content .card .button span:after {
         content: ">>";
         display: inline-block;
-        padding: 0 15px;
-        margin-left: 15px;
+        padding: 0 20px;
+        margin-left: 20px;
         background-color: black; }
-main .second-menu .wrapper {
-  min-height: 85px; }
+main .second-menu {
+  background-image: url("../img/decor-bg.png");
+  background-repeat: repeat;
+  background-position: left top; }
+  main .second-menu .flex-container {
+    display: flex;
+    justify-content: center; }
+    main .second-menu .flex-container li {
+      list-style: none;
+      display: flex; }
+      main .second-menu .flex-container li a {
+        display: flex;
+        box-sizing: border-box;
+        height: 85px;
+        padding: 10px;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        font-size: 19px;
+        font-weight: bolder;
+        text-decoration: none;
+        text-transform: uppercase; }
+      main .second-menu .flex-container li a:hover {
+        color: #ff5b23; }
+    main .second-menu .flex-container .active a {
+      color: #ff5b23; }
 main .product-block {
-  min-height: 800px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  main .product-block .card {
+    width: 270px;
+    margin-top: 25px;
+    margin-bottom: 10px; }
+    main .product-block .card img {
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: #f6f6f6;
+      width: 100%; }
+    main .product-block .card .product-name {
+      margin: 10px 0 5px 0;
+      font: 14px "Roboto", sans-serif;
+      font-weight: lighter;
+      color: #000; }
+    main .product-block .card .price {
+      font: 25px "Lora", serif;
+      color: #ff5b23; }
+    main .product-block .card .btn {
+      display: flex;
+      margin-top: 5px;
+      color: black; }
+      main .product-block .card .btn .buy {
+        width: 60px;
+        height: 60px;
+        background-color: #ff5b23; }
+      main .product-block .card .btn .other {
+        margin-left: 3px;
+        padding: 0 20px;
+        line-height: 60px;
+        font-size: 14px;
+        color: white;
+        background-color: #262626; }
 main .promo-block .wrapper {
   min-height: 500px; }
 main .content {
