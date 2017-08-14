@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAWA,uBAAwB;EACvB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC",
+"mappings": "AAYA,uBAAwB;EACvB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC",
 "sources": ["constants.scss"],
 "names": [],
 "file": "constants.css"

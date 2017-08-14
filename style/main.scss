@@ -116,7 +116,7 @@ main {
 		background-image: url("../img/slide-1.jpg"); 
 	}
 
-	.content {
+	.content-top {
 		display: flex;
 		justify-content:  space-between;
 		flex-wrap: wrap;
@@ -332,11 +332,55 @@ main {
 		}
 	}
 
-	.content {
-		min-height: 400px;
+	.content-middle {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin-top: 60px;
+
+		.card {
+			width: 570px;
+
+			.date {
+				display: inline-block;
+				height: 20px;
+				padding: 10px;
+				background-color: $orange;
+				font-size: 14px;
+			}
+
+			img {
+				box-sizing: border-box;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				padding: 0;
+				background-color: $card-background;
+				width: 100%;			
+			}
+
+			.card-description {
+				h2 	a {
+					text-decoration: none;
+					font: 24px $ubuntu;
+					color: black;
+				}
+				p {
+					margin-top: 5px;
+					line-height: 1.7;
+					font-size: 15px;
+					color: $font-gray;
+				}
+				h2:hover a {
+					color: $orange;
+				}
+			}
+
+		}
 	}
 
 	.content {	
+		margin-top: 30px;
 		.wrapper {
 			min-height: 500px;
 		}
