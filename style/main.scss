@@ -19,10 +19,6 @@ body {
 	border-right: 1px dashed lightgray;
 }
 
-.all-width {
-	background-color: gray;
-}
-
 header {
 	min-height: 50px;
 	
@@ -438,6 +434,14 @@ main {
 
 	.map {
 		min-height: 500px;
+		.overlay {
+			background: transparent; 
+			position: relative; 
+			width: 100%;
+			height: 550px;
+			top: 550px;
+			margin-top:-550px;
+		}
 	}
 
 	.bottom-menu {
