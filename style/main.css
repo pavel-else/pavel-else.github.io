@@ -270,10 +270,50 @@ main .content-middle {
       color: #777777; }
     main .content-middle .card .card-description h2:hover a {
       color: #ff5b23; }
-main .content {
-  margin-top: 30px; }
-  main .content .wrapper {
-    min-height: 500px; }
+main .content-bottom {
+  margin-top: 50px;
+  background-image: url("../img/parallax-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+  main .content-bottom .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .content-bottom .wrapper .card {
+      box-sizing: border-box;
+      padding: 25px;
+      margin: 100px 0;
+      height: 370px;
+      width: 370px;
+      opacity: 0.9; }
+      main .content-bottom .wrapper .card .icon {
+        margin-top: 20px;
+        height: 90px;
+        width: 90px;
+        box-sizing: border-box;
+        border: 1px solid lightgray; }
+      main .content-bottom .wrapper .card h2 {
+        margin-top: 8px;
+        font: 34px "Ubuntu", sans-serif;
+        text-transform: uppercase;
+        color: black;
+        opacity: 1; }
+      main .content-bottom .wrapper .card p {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.7;
+        color: #777777; }
+    main .content-bottom .wrapper .one {
+      background-color: #f6f6f6; }
+    main .content-bottom .wrapper .two {
+      background-color: #ff5b23;
+      color: white; }
+      main .content-bottom .wrapper .two h2, main .content-bottom .wrapper .two p {
+        color: white; }
+    main .content-bottom .wrapper .three {
+      background-color: #262626; }
+      main .content-bottom .wrapper .three h2, main .content-bottom .wrapper .three p {
+        color: white; }
 main .map {
   min-height: 500px; }
 main .bottom-menu .wrapper {
