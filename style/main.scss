@@ -70,7 +70,7 @@ header {
 			li {
 				list-style: none;
 				display: flex;				
-				border-right: 1px solid $border-menu;
+				border-right: 1px solid $light-gray;
 							
 				a {
 					display: flex; 
@@ -88,11 +88,11 @@ header {
 			}
 
 			li:first-child {
-				border-left: 1px solid $border-menu;
+				border-left: 1px solid $light-gray;
 			}
 			.special {
 				margin-left: auto;
-				border-left: 1px solid $border-menu;	
+				border-left: 1px solid $light-gray;	
 				a {
 					color: $orange;	
 				}
@@ -538,7 +538,18 @@ main {
 
 footer {
 	.top-footer {
+		display: flex;
+		margin-top: 50px;
 		min-height: 300px;
+
+		.categories {
+			color: black;
+			width: 788px;
+			border-right: 1px solid $border;
+		}
+		.store_info {
+			color: black;
+		}
 	}
 
 	.bottom-footer {
