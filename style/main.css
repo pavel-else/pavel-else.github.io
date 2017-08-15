@@ -396,22 +396,27 @@ footer .top-footer {
     width: 788px;
     border-right: 1px solid #e0e0e0; }
     footer .top-footer .footer-menu .column {
-      margin-right: 20px; }
+      margin-right: 20px;
+      min-width: 180px; }
       footer .top-footer .footer-menu .column span {
         font: 20px "Ubuntu", sans-serif;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-weight: bold; }
       footer .top-footer .footer-menu .column ul {
         margin-top: 20px;
         list-style: none; }
       footer .top-footer .footer-menu .column li {
         border-bottom: 1px solid #e0e0e0;
-        padding: 15px 0; }
+        padding: 8px 0 13px 0; }
       footer .top-footer .footer-menu .column a {
-        font-size: 18px;
+        font-size: 14px;
+        font-weight: 300;
         text-decoration: none;
-        color: lightgray; }
+        color: #777; }
       footer .top-footer .footer-menu .column li:last-child {
         border-bottom: none; }
+      footer .top-footer .footer-menu .column a:hover {
+        color: #ff5b23; }
   footer .top-footer .store_info {
     color: black; }
 footer .bottom-footer .wrapper {

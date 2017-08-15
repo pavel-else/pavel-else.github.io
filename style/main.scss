@@ -550,10 +550,12 @@ footer {
 
 			.column {
 				margin-right: 20px;
+				min-width: 180px;
 
 				span {
 					font: 20px $ubuntu;
 					text-transform: uppercase;
+					font-weight: bold;
 				}
 
 				ul {
@@ -562,15 +564,19 @@ footer {
 				}
 				li {
 					border-bottom: 1px solid $border;
-					padding: 15px 0;
+					padding: 8px 0 13px 0;
 				}
 				a {
-					font-size: 18px;
+					font-size: 14px;
+					font-weight: 300;
 					text-decoration: none;
-					color: lightgray;
+					color: $bottom-menu-gray;
 				}
 				li:last-child {
 					border-bottom: none;
+				}
+				a:hover {
+					color: $orange;
 				}
 			}
 		}
