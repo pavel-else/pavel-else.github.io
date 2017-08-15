@@ -361,13 +361,13 @@ main .bottom-menu {
       align-items: center;
       list-style: none; }
       main .bottom-menu .wrapper .social li {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-right: 5px;
         border-radius: 50%;
         background-color: #272727; }
         main .bottom-menu .wrapper .social li a {
-          height: 70px;
+          height: 60px;
           /*tmp*/
           display: flex;
           justify-content: center;
@@ -392,8 +392,8 @@ footer .top-footer {
   min-height: 300px; }
   footer .top-footer .footer-menu {
     display: flex;
-    color: black;
-    width: 788px;
+    color: #333;
+    width: 770px;
     border-right: 1px solid #e0e0e0; }
     footer .top-footer .footer-menu .column {
       margin-right: 20px;
@@ -418,7 +418,37 @@ footer .top-footer {
       footer .top-footer .footer-menu .column a:hover {
         color: #ff5b23; }
   footer .top-footer .store_info {
-    color: black; }
+    margin-left: 30px;
+    color: #333; }
+    footer .top-footer .store_info .title {
+      font: 20px "Ubuntu", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold; }
+    footer .top-footer .store_info .address {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777; }
+    footer .top-footer .store_info .phone {
+      margin-top: 20px; }
+      footer .top-footer .store_info .phone span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px; }
+      footer .top-footer .store_info .phone .number {
+        font: 34px "Lora", serif;
+        font-weight: normal; }
+        footer .top-footer .store_info .phone .number span {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+          border: 1px solid lightgray; }
+    footer .top-footer .store_info .email {
+      margin-top: 20px;
+      font-size: 14px; }
+      footer .top-footer .store_info .email a {
+        text-decoration: none;
+        color: #ff5b23; }
 footer .bottom-footer .wrapper {
   min-height: 100px; }
 

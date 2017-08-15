@@ -498,14 +498,14 @@ main {
 				
 				li {
 
-					width: 70px;
-					height: 70px;
+					width: 60px;
+					height: 60px;
 					margin-right: 5px;
 					border-radius: 50%;
 					background-color: $light-gray;
 
 					a {
-						height: 70px;
+						height: 60px;
 						/*tmp*/
 							display: flex;
 							justify-content: center;
@@ -544,8 +544,8 @@ footer {
 
 		.footer-menu {
 			display: flex;
-			color: black;
-			width: 788px;
+			color: $black;
+			width: 770px;
 			border-right: 1px solid $border;
 
 			.column {
@@ -581,7 +581,46 @@ footer {
 			}
 		}
 		.store_info {
-			color: black;
+			margin-left: 30px;
+			color: $black;
+
+			.title {
+				font: 20px $ubuntu;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.address {
+				margin-top: 20px;
+				font-size: 14px;
+				color: $bottom-menu-gray;
+			}
+			.phone {
+				margin-top: 20px;
+				span {
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 20px;
+				}
+				.number {
+					font: 34px $lora;
+					font-weight: normal;
+					span {
+						display: inline-block;
+						width: 30px;
+						height: 30px;
+						margin-right: 5px;
+						border: 1px solid lightgray;
+					}
+				}
+			}
+			.email {
+				margin-top: 20px;
+				font-size: 14px;
+				a {
+					text-decoration: none;
+					color: $orange;
+				}
+			}
 		}
 	}
 
