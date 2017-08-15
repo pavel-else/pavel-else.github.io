@@ -15,8 +15,8 @@ body {
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
-	border-left: 1px dashed lightgray;
-	border-right: 1px dashed lightgray;
+/*	border-left: 1px dashed lightgray;
+	border-right: 1px dashed lightgray;*/
 }
 
 header {
@@ -106,6 +106,7 @@ header {
 
 main {
 	.slider {
+		margin: 0 auto;
 		height: 900px;
 		width: 2000px;
 		position: absolute;
