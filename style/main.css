@@ -335,27 +335,56 @@ main .bottom-menu {
       display: flex;
       align-items: center;
       text-transform: uppercase;
-      font: 20px "Roboto", sans-serif;
+      font: 26px "Roboto", sans-serif;
       font-weight: bold; }
-    main .bottom-menu .wrapper .input-email {
-      display: flex; }
-      main .bottom-menu .wrapper .input-email input {
-        box-sizing: border-box;
-        height: 35px;
-        width: 200px;
-        margin: 0 0 0 10px;
-        padding-left: 10px;
-        border: none; }
-    main .bottom-menu .wrapper .btn-search {
+      main .bottom-menu .wrapper .newsletter .input-email {
+        display: flex; }
+        main .bottom-menu .wrapper .newsletter .input-email input {
+          box-sizing: border-box;
+          height: 40px;
+          width: 200px;
+          margin: 0 0 0 10px;
+          padding-left: 10px;
+          border: none; }
+      main .bottom-menu .wrapper .newsletter .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 50px;
+        margin: 0;
+        background-color: #ff5b23; }
+      main .bottom-menu .wrapper .newsletter .btn-search:hover {
+        background-color: black; }
+    main .bottom-menu .wrapper .social {
       display: flex;
       align-items: center;
-      justify-content: center;
-      height: 35px;
-      width: 50px;
-      margin: 0;
-      background-color: #ff5b23; }
-    main .bottom-menu .wrapper .btn-search:hover {
-      background-color: black; }
+      list-style: none; }
+      main .bottom-menu .wrapper .social li {
+        width: 70px;
+        height: 70px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #272727; }
+        main .bottom-menu .wrapper .social li a {
+          height: 70px;
+          /*tmp*/
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          text-decoration: none;
+          color: white; }
+      main .bottom-menu .wrapper .social li:hover {
+        background-color: white; }
+        main .bottom-menu .wrapper .social li:hover a {
+          color: #ff5b23; }
+    main .bottom-menu .wrapper .social:before {
+      content: 'follow us';
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: bold; }
 
 footer .top-footer {
   min-height: 300px; }
