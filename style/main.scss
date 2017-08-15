@@ -19,10 +19,6 @@ body {
 	border-right: 1px dashed lightgray;
 }
 
-.all-width {
-	background-color: gray;
-}
-
 header {
 	min-height: 50px;
 	
@@ -74,7 +70,7 @@ header {
 			li {
 				list-style: none;
 				display: flex;				
-				border-right: 1px solid $border-menu;
+				border-right: 1px solid $light-gray;
 							
 				a {
 					display: flex; 
@@ -92,11 +88,11 @@ header {
 			}
 
 			li:first-child {
-				border-left: 1px solid $border-menu;
+				border-left: 1px solid $light-gray;
 			}
 			.special {
 				margin-left: auto;
-				border-left: 1px solid $border-menu;	
+				border-left: 1px solid $light-gray;	
 				a {
 					color: $orange;	
 				}
@@ -116,7 +112,7 @@ main {
 		background-image: url("../img/slide-1.jpg"); 
 	}
 
-	.content {
+	.content-top {
 		display: flex;
 		justify-content:  space-between;
 		flex-wrap: wrap;
@@ -224,8 +220,7 @@ main {
 			}
 
 
-		}
-	
+		}	
 	}
 
 	.product-block {
@@ -332,30 +327,256 @@ main {
 		}
 	}
 
-	.content {
-		min-height: 400px;
+	.content-middle {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin-top: 60px;
+
+		.card {
+			width: 570px;
+
+			.date {
+				display: inline-block;
+				height: 20px;
+				padding: 10px;
+				background-color: $orange;
+				font-size: 14px;
+			}
+
+			img {
+				box-sizing: border-box;
+				margin-top: 10px;
+				margin-bottom: 15px;
+				padding: 0;
+				background-color: $card-background;
+				width: 100%;			
+			}
+
+			.card-description {
+				h2 	a {
+					text-decoration: none;
+					font: 24px $ubuntu;
+					color: black;
+				}
+				p {
+					margin-top: 5px;
+					line-height: 1.7;
+					font-size: 15px;
+					color: $font-gray;
+				}
+				h2:hover a {
+					color: $orange;
+				}
+			}
+
+		}
 	}
 
-	.content {	
+	.content-bottom {
+		margin-top: 50px;
+		background-image: url("../img/parallax-2.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+
 		.wrapper {
-			min-height: 500px;
-		}
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.card {
+				box-sizing: border-box;
+				padding: 25px;
+				margin: 100px 0;
+				height: 370px;
+				width: 370px;
+				opacity: 0.9;
+
+				.icon {
+					margin-top: 20px;
+					height: 90px;
+					width: 90px;
+					box-sizing: border-box;
+					border: 1px solid lightgray;
+				}
+				h2 {
+					margin-top: 8px;
+					font: 34px $ubuntu;
+					text-transform: uppercase;
+					color: black;
+					opacity: 1;
+				}
+				p {
+					margin-top: 10px;
+					font-size: 13px;
+					line-height: 1.7;
+					color: $font-gray;
+				}
+			}
+
+			.one {
+				background-color: $card-background;
+			}
+			.two {
+				background-color: $orange;
+				color: white;
+				h2, p {color: white;}
+			}
+			.three {
+				background-color: $gray;
+				h2, p {color: white;}
+				
+			}
+		}				
 	}
 
 	.map {
 		min-height: 500px;
+		.overlay {
+			background: transparent; 
+			position: relative; 
+			width: 100%;
+			height: 550px;
+			top: 550px;
+			margin-top:-550px;
+			margin-bottom: 0;
+		}
 	}
 
 	.bottom-menu {
+		background-image: url("../img/decor-bg.png");
+		background-repeat: repeat;
+		background-position: left top;
+		
 		.wrapper {
-			min-height: 85px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			min-height: 70px;
+			padding: 10px 0;
+
+			.newsletter {
+				display: flex;
+				align-items: center;
+				text-transform: uppercase;
+				font: 26px $roboto;
+				font-weight: bold;
+				
+				.input-email {
+					display: flex;	
+					
+					input {
+						box-sizing: border-box;
+						height: 40px;
+						width: 200px;
+						margin: 0 0 0 10px;
+						padding-left: 10px;
+						border: none;
+					}	
+					
+				}
+				.btn-search {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 40px;
+					width: 50px;
+					margin: 0;
+					background-color: $orange;
+				}
+				.btn-search:hover {
+					background-color: black;
+				}
+			}
+
+			.social {
+				display: flex;
+				align-items: center;
+				list-style: none;
+				
+				li {
+
+					width: 70px;
+					height: 70px;
+					margin-right: 5px;
+					border-radius: 50%;
+					background-color: $light-gray;
+
+					a {
+						height: 70px;
+						/*tmp*/
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 20px;
+							text-decoration: none;
+							color: white;
+					}
+				}
+
+				li:hover {
+					background-color: white;
+					a {
+						color: $orange;
+					}
+				}
+			}
+			.social:before {
+				content: 'follow us';
+				margin-right: 10px;
+				text-transform: uppercase;
+				font-size: 26px;
+				font-weight: bold;
+			}
+
 		}
+
 	}
 }
 
 footer {
 	.top-footer {
+		display: flex;
+		margin-top: 50px;
 		min-height: 300px;
+
+		.footer-menu {
+			display: flex;
+			color: black;
+			width: 788px;
+			border-right: 1px solid $border;
+
+			.column {
+				margin-right: 20px;
+
+				span {
+					font: 20px $ubuntu;
+					text-transform: uppercase;
+				}
+
+				ul {
+					margin-top: 20px;
+					list-style: none;
+				}
+				li {
+					border-bottom: 1px solid $border;
+					padding: 15px 0;
+				}
+				a {
+					font-size: 18px;
+					text-decoration: none;
+					color: lightgray;
+				}
+				li:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+		.store_info {
+			color: black;
+		}
 	}
 
 	.bottom-footer {

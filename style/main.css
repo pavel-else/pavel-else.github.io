@@ -18,9 +18,6 @@ body {
   border-left: 1px dashed lightgray;
   border-right: 1px dashed lightgray; }
 
-.all-width {
-  background-color: gray; }
-
 header {
   min-height: 50px; }
   header .top-header {
@@ -58,7 +55,7 @@ header {
       header .main-menu .flex-container li {
         list-style: none;
         display: flex;
-        border-right: 1px solid #777; }
+        border-right: 1px solid #272727; }
         header .main-menu .flex-container li a {
           display: flex;
           box-sizing: border-box;
@@ -72,10 +69,10 @@ header {
           text-decoration: none;
           text-transform: uppercase; }
       header .main-menu .flex-container li:first-child {
-        border-left: 1px solid #777; }
+        border-left: 1px solid #272727; }
       header .main-menu .flex-container .special {
         margin-left: auto;
-        border-left: 1px solid #777; }
+        border-left: 1px solid #272727; }
         header .main-menu .flex-container .special a {
           color: #ff5b23; }
 
@@ -86,42 +83,42 @@ main .slider {
   top: -250px;
   z-index: -2;
   background-image: url("../img/slide-1.jpg"); }
-main .content {
+main .content-top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 250px;
   margin-bottom: 25px; }
-  main .content .card {
+  main .content-top .card {
     box-sizing: border-box;
     min-height: 320px;
     min-width: 570px;
     margin-bottom: 30px;
     border-top: 4px solid #ff5b23; }
-    main .content .card img {
+    main .content-top .card img {
       position: absolute; }
-    main .content .card .card-description {
+    main .content-top .card .card-description {
       position: absolute;
       padding: 15px 30px; }
-      main .content .card .card-description h2 {
+      main .content-top .card .card-description h2 {
         margin: 0;
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase; }
-        main .content .card .card-description h2 span {
+        main .content-top .card .card-description h2 span {
           font-weight: normal; }
-      main .content .card .card-description p {
+      main .content-top .card .card-description p {
         display: block;
         width: 350px;
         font-size: 14px;
         font-weight: normal; }
-    main .content .card .button {
+    main .content-top .card .button {
       border: none;
       margin-top: 230px;
       margin-left: 30px;
       padding: 0;
       opacity: 0.8; }
-      main .content .card .button span {
+      main .content-top .card .button span {
         display: inline-block;
         line-height: 60px;
         margin: 5px 0;
@@ -132,7 +129,7 @@ main .content {
         font-size: 20px;
         color: #fff;
         font-weight: bold; }
-      main .content .card .button span:after {
+      main .content-top .card .button span:after {
         content: ">>";
         display: inline-block;
         padding: 0 20px;
@@ -239,17 +236,184 @@ main .promo-block {
     color: white; }
   main .promo-block .wrapper:hover .btn {
     background-color: black; }
-main .content {
-  min-height: 400px; }
-main .content .wrapper {
-  min-height: 500px; }
+main .content-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px; }
+  main .content-middle .card {
+    width: 570px; }
+    main .content-middle .card .date {
+      display: inline-block;
+      height: 20px;
+      padding: 10px;
+      background-color: #ff5b23;
+      font-size: 14px; }
+    main .content-middle .card img {
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      padding: 0;
+      background-color: #f6f6f6;
+      width: 100%; }
+    main .content-middle .card .card-description h2 a {
+      text-decoration: none;
+      font: 24px "Ubuntu", sans-serif;
+      color: black; }
+    main .content-middle .card .card-description p {
+      margin-top: 5px;
+      line-height: 1.7;
+      font-size: 15px;
+      color: #777777; }
+    main .content-middle .card .card-description h2:hover a {
+      color: #ff5b23; }
+main .content-bottom {
+  margin-top: 50px;
+  background-image: url("../img/parallax-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+  main .content-bottom .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .content-bottom .wrapper .card {
+      box-sizing: border-box;
+      padding: 25px;
+      margin: 100px 0;
+      height: 370px;
+      width: 370px;
+      opacity: 0.9; }
+      main .content-bottom .wrapper .card .icon {
+        margin-top: 20px;
+        height: 90px;
+        width: 90px;
+        box-sizing: border-box;
+        border: 1px solid lightgray; }
+      main .content-bottom .wrapper .card h2 {
+        margin-top: 8px;
+        font: 34px "Ubuntu", sans-serif;
+        text-transform: uppercase;
+        color: black;
+        opacity: 1; }
+      main .content-bottom .wrapper .card p {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.7;
+        color: #777777; }
+    main .content-bottom .wrapper .one {
+      background-color: #f6f6f6; }
+    main .content-bottom .wrapper .two {
+      background-color: #ff5b23;
+      color: white; }
+      main .content-bottom .wrapper .two h2, main .content-bottom .wrapper .two p {
+        color: white; }
+    main .content-bottom .wrapper .three {
+      background-color: #262626; }
+      main .content-bottom .wrapper .three h2, main .content-bottom .wrapper .three p {
+        color: white; }
 main .map {
   min-height: 500px; }
-main .bottom-menu .wrapper {
-  min-height: 85px; }
+  main .map .overlay {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    top: 550px;
+    margin-top: -550px;
+    margin-bottom: 0; }
+main .bottom-menu {
+  background-image: url("../img/decor-bg.png");
+  background-repeat: repeat;
+  background-position: left top; }
+  main .bottom-menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 0; }
+    main .bottom-menu .wrapper .newsletter {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font: 26px "Roboto", sans-serif;
+      font-weight: bold; }
+      main .bottom-menu .wrapper .newsletter .input-email {
+        display: flex; }
+        main .bottom-menu .wrapper .newsletter .input-email input {
+          box-sizing: border-box;
+          height: 40px;
+          width: 200px;
+          margin: 0 0 0 10px;
+          padding-left: 10px;
+          border: none; }
+      main .bottom-menu .wrapper .newsletter .btn-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 50px;
+        margin: 0;
+        background-color: #ff5b23; }
+      main .bottom-menu .wrapper .newsletter .btn-search:hover {
+        background-color: black; }
+    main .bottom-menu .wrapper .social {
+      display: flex;
+      align-items: center;
+      list-style: none; }
+      main .bottom-menu .wrapper .social li {
+        width: 70px;
+        height: 70px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #272727; }
+        main .bottom-menu .wrapper .social li a {
+          height: 70px;
+          /*tmp*/
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          text-decoration: none;
+          color: white; }
+      main .bottom-menu .wrapper .social li:hover {
+        background-color: white; }
+        main .bottom-menu .wrapper .social li:hover a {
+          color: #ff5b23; }
+    main .bottom-menu .wrapper .social:before {
+      content: 'follow us';
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: bold; }
 
 footer .top-footer {
+  display: flex;
+  margin-top: 50px;
   min-height: 300px; }
+  footer .top-footer .footer-menu {
+    display: flex;
+    color: black;
+    width: 788px;
+    border-right: 1px solid #e0e0e0; }
+    footer .top-footer .footer-menu .column {
+      margin-right: 20px; }
+      footer .top-footer .footer-menu .column span {
+        font: 20px "Ubuntu", sans-serif;
+        text-transform: uppercase; }
+      footer .top-footer .footer-menu .column ul {
+        margin-top: 20px;
+        list-style: none; }
+      footer .top-footer .footer-menu .column li {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0; }
+      footer .top-footer .footer-menu .column a {
+        font-size: 18px;
+        text-decoration: none;
+        color: lightgray; }
+      footer .top-footer .footer-menu .column li:last-child {
+        border-bottom: none; }
+  footer .top-footer .store_info {
+    color: black; }
 footer .bottom-footer .wrapper {
   min-height: 100px; }
 
