@@ -319,9 +319,43 @@ main .map {
     width: 100%;
     height: 550px;
     top: 550px;
-    margin-top: -550px; }
-main .bottom-menu .wrapper {
-  min-height: 85px; }
+    margin-top: -550px;
+    margin-bottom: 0; }
+main .bottom-menu {
+  background-image: url("../img/decor-bg.png");
+  background-repeat: repeat;
+  background-position: left top; }
+  main .bottom-menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 0; }
+    main .bottom-menu .wrapper .newsletter {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font: 20px "Roboto", sans-serif;
+      font-weight: bold; }
+    main .bottom-menu .wrapper .input-email {
+      display: flex; }
+      main .bottom-menu .wrapper .input-email input {
+        box-sizing: border-box;
+        height: 35px;
+        width: 200px;
+        margin: 0 0 0 10px;
+        padding-left: 10px;
+        border: none; }
+    main .bottom-menu .wrapper .btn-search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      width: 50px;
+      margin: 0;
+      background-color: #ff5b23; }
+    main .bottom-menu .wrapper .btn-search:hover {
+      background-color: black; }
 
 footer .top-footer {
   min-height: 300px; }

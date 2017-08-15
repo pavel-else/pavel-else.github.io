@@ -220,8 +220,7 @@ main {
 			}
 
 
-		}
-	
+		}	
 	}
 
 	.product-block {
@@ -441,13 +440,58 @@ main {
 			height: 550px;
 			top: 550px;
 			margin-top:-550px;
+			margin-bottom: 0;
 		}
 	}
 
 	.bottom-menu {
+		background-image: url("../img/decor-bg.png");
+		background-repeat: repeat;
+		background-position: left top;
+		
 		.wrapper {
-			min-height: 85px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			min-height: 70px;
+			padding: 10px 0;
+
+			.newsletter {
+				display: flex;
+				align-items: center;
+				text-transform: uppercase;
+				font: 20px $roboto;
+				font-weight: bold;
+			}
+
+			.input-email {
+				display: flex;	
+				
+				input {
+					box-sizing: border-box;
+					height: 35px;
+					width: 200px;
+					margin: 0 0 0 10px;
+					padding-left: 10px;
+					border: none;
+				}	
+				
+			}
+			.btn-search {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 35px;
+				width: 50px;
+				margin: 0;
+				background-color: $orange;
+			}
+			.btn-search:hover {
+				background-color: black;
+			}
 		}
+
 	}
 }
 
