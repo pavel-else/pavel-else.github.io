@@ -390,10 +390,28 @@ footer .top-footer {
   display: flex;
   margin-top: 50px;
   min-height: 300px; }
-  footer .top-footer .categories {
+  footer .top-footer .footer-menu {
+    display: flex;
     color: black;
     width: 788px;
     border-right: 1px solid #e0e0e0; }
+    footer .top-footer .footer-menu .column {
+      margin-right: 20px; }
+      footer .top-footer .footer-menu .column span {
+        font: 20px "Ubuntu", sans-serif;
+        text-transform: uppercase; }
+      footer .top-footer .footer-menu .column ul {
+        margin-top: 20px;
+        list-style: none; }
+      footer .top-footer .footer-menu .column li {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0; }
+      footer .top-footer .footer-menu .column a {
+        font-size: 18px;
+        text-decoration: none;
+        color: lightgray; }
+      footer .top-footer .footer-menu .column li:last-child {
+        border-bottom: none; }
   footer .top-footer .store_info {
     color: black; }
 footer .bottom-footer .wrapper {

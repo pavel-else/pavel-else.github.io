@@ -542,10 +542,37 @@ footer {
 		margin-top: 50px;
 		min-height: 300px;
 
-		.categories {
+		.footer-menu {
+			display: flex;
 			color: black;
 			width: 788px;
 			border-right: 1px solid $border;
+
+			.column {
+				margin-right: 20px;
+
+				span {
+					font: 20px $ubuntu;
+					text-transform: uppercase;
+				}
+
+				ul {
+					margin-top: 20px;
+					list-style: none;
+				}
+				li {
+					border-bottom: 1px solid $border;
+					padding: 15px 0;
+				}
+				a {
+					font-size: 18px;
+					text-decoration: none;
+					color: lightgray;
+				}
+				li:last-child {
+					border-bottom: none;
+				}
+			}
 		}
 		.store_info {
 			color: black;
