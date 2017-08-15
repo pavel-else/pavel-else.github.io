@@ -59,15 +59,16 @@ header {
         header .main-menu .flex-container li a {
           display: flex;
           box-sizing: border-box;
-          height: 85px;
-          padding: 10px;
-          align-items: center;
+          height: 80px;
+          padding: 28px 18px 0 18px;
           font-family: "Roboto", sans-serif;
           color: #fff;
           font-size: 20px;
           font-weight: bold;
           text-decoration: none;
           text-transform: uppercase; }
+        header .main-menu .flex-container li a:hover {
+          border-bottom: 10px solid #ff5b23; }
       header .main-menu .flex-container li:first-child {
         border-left: 1px solid #272727; }
       header .main-menu .flex-container .special {
