@@ -289,6 +289,43 @@ main {
 					background-color: $gray;
 				}
 			}
+
+			.btn-group {
+				display: flex;
+				margin-top: 5px;
+
+				a {
+					text-decoration: none;
+					color: white;
+				}
+
+				.buy {
+					padding: 10px;
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					background-color: $orange;
+				}
+				.other {
+					margin-left: 3px;
+					padding: 10px 20px;
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;					
+					background-color: $gray;
+					font-size: 14px;
+				}
+				.other:after {
+					margin-left: 3px;
+					content: '\f101';
+					font: 20px $awesome;
+					color: $orange;
+				}
+				.buy:hover, .other:hover {
+					background-color: $bottom-menu-gray;
+				} 
+			}
+
 		}
 	}
 

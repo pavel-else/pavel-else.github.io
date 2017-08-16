@@ -209,6 +209,33 @@ main .product-block {
         font-size: 14px;
         color: white;
         background-color: #262626; }
+    main .product-block .card .btn-group {
+      display: flex;
+      margin-top: 5px; }
+      main .product-block .card .btn-group a {
+        text-decoration: none;
+        color: white; }
+      main .product-block .card .btn-group .buy {
+        padding: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff5b23; }
+      main .product-block .card .btn-group .other {
+        margin-left: 3px;
+        padding: 10px 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #262626;
+        font-size: 14px; }
+      main .product-block .card .btn-group .other:after {
+        margin-left: 3px;
+        content: '\f101';
+        font: 20px "FontAwesome";
+        color: #ff5b23; }
+      main .product-block .card .btn-group .buy:hover, main .product-block .card .btn-group .other:hover {
+        background-color: #777; }
 main .promo-block {
   margin-top: 50px;
   background-image: url("../img/parallax-1.jpg");
