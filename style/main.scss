@@ -12,6 +12,12 @@ body {
 	border-bottom: 1px dashed lightgray;
 }
 
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
@@ -455,7 +461,8 @@ main {
 					height: 90px;
 					width: 90px;
 					box-sizing: border-box;
-					border: 1px solid lightgray;
+					color: white;
+					font-size: 90px;
 				}
 				h2 {
 					margin-top: 8px;
@@ -474,6 +481,9 @@ main {
 
 			.one {
 				background-color: $card-background;
+				.icon {
+					color: $orange;
+				}
 			}
 			.two {
 				background-color: $orange;
