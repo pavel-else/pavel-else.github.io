@@ -31,30 +31,47 @@ header {
 			margin-bottom: 30px;
 		}
 		
-		.button-group {
-			display: inline-flex;
+		.btn-group {
 			margin-top: 15px;
-			margin-left: 45px;
+			margin-left: 70px;
 
 			.btn {
-				display: flex;
-				margin-left: 15px;
-				margin-right: 5px;
+				margin-right: 20px;
+			}
 
-				.ico {
-					display: inline-block;
-					width: 30px;
-					height: 30px;
-					background-color: $orange;
-				}
-				.title {
-					margin-left: 7px;
-					margin-top: 7px	;
-					font-family: $roboto;
-					font-size: 14px;
-					display: inline-block;
-					vertical-align: middle;
-				}
+			.btn:before {
+				margin-right: 10px;
+
+				font-family: $awesome;
+				font-size: 18px;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				height: 30px;
+				width: 30px;
+				background-color: $orange;
+			}
+			.call-back:before {
+				content:'\f041';
+			}
+			.account:before {
+				content: '\f007';
+			}
+			.login:before {
+				content: '\f13e';
+			}
+			a {
+				font-family: $roboto;
+				font-size: 14px;
+				text-decoration: none;
+				color: white;
+			}
+
+			.btn:hover:before {
+				background-color: black;
+			}
+			a:hover span {
+					color: $orange;
 			}
 		}
 	}

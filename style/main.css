@@ -26,26 +26,36 @@ header {
     padding-top: 50px; }
     header .top-header .logo {
       margin-bottom: 30px; }
-    header .top-header .button-group {
-      display: inline-flex;
+    header .top-header .btn-group {
       margin-top: 15px;
-      margin-left: 45px; }
-      header .top-header .button-group .btn {
-        display: flex;
-        margin-left: 15px;
-        margin-right: 5px; }
-        header .top-header .button-group .btn .ico {
-          display: inline-block;
-          width: 30px;
-          height: 30px;
-          background-color: #ff5b23; }
-        header .top-header .button-group .btn .title {
-          margin-left: 7px;
-          margin-top: 7px;
-          font-family: "Roboto", sans-serif;
-          font-size: 14px;
-          display: inline-block;
-          vertical-align: middle; }
+      margin-left: 70px; }
+      header .top-header .btn-group .btn {
+        margin-right: 20px; }
+      header .top-header .btn-group .btn:before {
+        margin-right: 10px;
+        font-family: "FontAwesome";
+        font-size: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        background-color: #ff5b23; }
+      header .top-header .btn-group .call-back:before {
+        content: '\f041'; }
+      header .top-header .btn-group .account:before {
+        content: '\f007'; }
+      header .top-header .btn-group .login:before {
+        content: '\f13e'; }
+      header .top-header .btn-group a {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: white; }
+      header .top-header .btn-group .btn:hover:before {
+        background-color: black; }
+      header .top-header .btn-group a:hover span {
+        color: #ff5b23; }
   header .main-menu {
     background-image: url("../img/decor-bg.png");
     background-repeat: repeat;
