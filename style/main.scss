@@ -18,6 +18,12 @@ body {
 	align-items: center;
 }
 
+.inline-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
@@ -671,12 +677,12 @@ footer {
 				.number {
 					font: 34px $lora;
 					font-weight: normal;
-					span {
-						display: inline-block;
+					i {
 						width: 30px;
 						height: 30px;
 						margin-right: 5px;
-						border: 1px solid lightgray;
+						color: $orange;
+
 					}
 				}
 			}

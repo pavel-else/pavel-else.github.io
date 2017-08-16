@@ -17,6 +17,11 @@ body {
   justify-content: center;
   align-items: center; }
 
+.inline-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -484,12 +489,11 @@ footer .top-footer {
       footer .top-footer .store_info .phone .number {
         font: 34px "Lora", serif;
         font-weight: normal; }
-        footer .top-footer .store_info .phone .number span {
-          display: inline-block;
+        footer .top-footer .store_info .phone .number i {
           width: 30px;
           height: 30px;
           margin-right: 5px;
-          border: 1px solid lightgray; }
+          color: #ff5b23; }
     footer .top-footer .store_info .email {
       margin-top: 20px;
       font-size: 14px; }
