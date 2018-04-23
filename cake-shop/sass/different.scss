@@ -1,0 +1,183 @@
+@import '_include/_var.scss';
+
+body.path-katalog {
+
+	/*align -center*/
+	main,
+	.region-footer {
+		width: 1140px; 
+		margin: 0 auto;
+	}
+
+	main {
+		padding-top: 30px;
+		margin-bottom: 50px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row-reverse;
+		-moz-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		-o-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		color: black;
+		a {
+			color: black;
+			&:hover {
+				color: $color_accent;
+			}
+		}
+	}
+
+	.layout-content {
+		width: 800px;margin-right: 20px;
+	}
+
+	.page-title {
+		font-family: $font_caption;
+		font-size: 40px;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	.view-katalog .view-content {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.view-katalog .views-row {
+		background-color: #efefef;
+		width: 32%;
+		margin-bottom: 30px;
+		img {
+			margin-bottom: 70px;
+			width: 100%;
+			height: auto;
+		}
+		.views-field-title {
+			margin-bottom: 20px;
+			padding: 0 20px;
+			a {
+				font-family: $font_caption;
+				font-size: 28px;
+			}
+		}
+		.views-field-body {
+			margin-bottom: 20px;
+			padding: 0 20px;
+			line-height: 1.5;
+		}
+		.views-field-field-cena {
+			margin-bottom: 20px;
+			padding: 0 20px;
+			font-family: $font_caption;
+			font-size: 24px;
+			font-weight: 700;		
+		}
+	}
+
+	.layout-sidebar-first {
+		width: 280px;
+		margin-right: 50px;
+		h2 {
+			padding: 15px 20px;
+			font-size: 24px;
+			background-color: $color_accent;
+			color: white;
+		}
+
+		.menu {
+			margin-top: 5px;
+			list-style: none;
+		}
+		.menu-item {
+			margin-bottom: 10px;
+		}
+		a {
+			padding: 30px 20px 30px 10px;
+			display: block;
+			background-color: #efefef;
+			border-left: 10px solid #efefef;
+			&:hover {
+				color: black;
+				background-color: #f6cfd5;
+				border-left: 10px solid $color_accent;
+			}
+		}	
+	}
+}
+
+body.path-novosti {
+	background-color: #232323;
+	/*align -center*/
+	.region-footer,
+	.view-novosti {
+		width: 1140px; 
+		margin: 0 auto;
+	}
+	
+	.view-novosti {
+	}
+	.views-row {
+		margin-bottom: 50px;
+		padding-left: 130px;
+		position: relative;
+		border-bottom: 1px solid #232323;
+	}
+	.views-field-created {
+		width: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px 0 12px 0;
+		background-color: #f6cfd5;
+		p {
+			text-align: center;
+			color: black;
+		}
+		p:first-child {
+			font-size: 50px;
+			font-weight: bold;
+		}
+		p:nth-child(3) {
+			font-size: 26px;
+			font-weight: bold;
+		}
+	}
+	.views-field-title {
+		margin-bottom: 20px;
+	}
+	.views-field-title a {
+		padding-bottom: 3px;
+		font-family: $font_caption;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 1.3;
+		border-bottom: 1px solid black;
+		color: black;
+	}
+	.views-field-body {
+		padding-bottom: 50px;
+		p {
+			padding-bottom: 15px;
+			line-height: 1.5;
+			color: black;
+		}
+	}
+}
+
+body.page-node-type-tovar-usluga {
+	.field--name-field-image img {
+		width: 400px !important;
+		height: auto;
+	}
+}

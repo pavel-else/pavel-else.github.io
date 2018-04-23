@@ -1,0 +1,23 @@
+/*button*/
+.more-link {
+	display: flex;
+	justify-content: center;
+}
+.more-link a,
+.button a, 
+#block-classier-form .button {
+	display: block;
+	padding: 15px 40px;
+	border: 4px solid $color_accent;
+	border-radius: 40px;
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: none;
+	line-height: 28px;
+	color: black;
+	transition: 0.5s;
+	&:hover {
+		background-color: $color_accent;
+		color: white;
+	}
+}
