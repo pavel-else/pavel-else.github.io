@@ -1,30 +1,31 @@
 "use strict";
 
-// Обработка сщстояний карточки
+// Обработка состояний карточки
 var cards = document.querySelectorAll(".card");
 var cardBody = document.querySelectorAll(".card__wrap");
 var cardLink = document.querySelectorAll(".card__link");
 
-
 for (var i = 0; i < cards.length; i++) {
-	(function (i) {
-		cardBody[i].addEventListener("click", function(evt) {
-			if (!cards[i].matches(".disabled")) {
-				cards[i].classList.toggle("selected");
-			};
-		});
-		cardLink[i].addEventListener("click", function(evt) {
-			evt.preventDefault();
-			if (!cards[i].matches(".disabled")) {
-				cards[i].classList.toggle("selected");
-			};
-		});
-
-	})(i);
+	setToggle(cardBody[i], cards[i]);
+	setToggle(cardLink[i], cards[i]);
 }
 
-function x(evt) {
-if (!cards[i].matches(".disabled")) {
-				cards[i].classList.toggle("selected");
-			};	
+function setToggle(listener, elem) {
+	if (!isDisabled(elem)) {		
+		listener.addEventListener("click", function () {
+			elem.classList.toggle("selected");
+		});	
+	}
+}
+
+function isDisabled (elem) {
+	var arr = elem.getAttribute('class').split(' ');
+
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] == 'disabled') {
+			return true;
+		}
+	}
+
+	return false;
 }
