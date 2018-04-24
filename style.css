@@ -1,0 +1,127 @@
+.tmp {
+	outline: 1px solid green;
+}
+body {
+	background-color: gray;
+
+  	font-family: 'Roboto', 'Arial', sans-serif;
+  	font-size: 16px;
+  	font-weight: 400;
+  	line-height: 22px;
+
+  	margin: 0;
+  	padding: 0;
+
+  	color: #fff;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: lightgray;
+	box-sizing: border-box;
+	padding: 10px 30px 0;
+
+}
+.portfolio__items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.portfolio__item {
+	display: block;
+	width: 480px;
+	min-height: 320px;
+	box-sizing: border-box;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.project__name {
+	padding: 0;
+	margin: 15px 0 30px;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 20;
+	left: -1000px;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+.portfolio__item:hover .project__name {
+	left: 0;
+}
+
+.project__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	height: 320px;
+	width: auto;
+	z-index: 10;
+}
+.portfolio__item:hover::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 15;
+}
+
+.project__text-block {
+	position: relative;
+	z-index: 20;
+	left: -1000px;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+.portfolio__item:hover .project__text-block {
+	left: 0;
+}
+
+.project__text-block p {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+.project__year {
+	font-size: 14px;
+}
+
+.project__link {
+	display: block;
+	width: 210px;
+	margin: auto auto 20px;
+	padding: 10px 20px;
+	border-radius: 22px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	position: relative;
+	background-color: #fff;
+	z-index: 20;
+	bottom: -1000px;
+	transition-property: bottom;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+.project__link:hover {
+	box-shadow: 0px 0px 5px 0px #fff;
+}
+
+.portfolio__item:hover .project__link {
+	bottom: 0;
+}
