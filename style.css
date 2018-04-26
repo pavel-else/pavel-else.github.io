@@ -59,12 +59,18 @@ body {
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
+
+.content {
+	position: relative;
+	z-index: 1;
+}
 .portfolio__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   list-style: none;
@@ -215,13 +221,11 @@ body {
   bottom: 0;
 }
 
-
 .main-footer {
-  background-color: #333;	
+  	background-color: #333;	
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	min-height: 50px;
 	z-index: 10;
 }
 
@@ -229,6 +233,7 @@ body {
 	background-color: transparent;
 	display: flex;
 	justify-content: center;
+	padding: 0;
 }
 
 .main-footer__email {
