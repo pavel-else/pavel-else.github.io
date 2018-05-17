@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+	<title>Direction-2</title>
+</head>
+<body>
+	<div id="app">		
+		<div class="container">
+			<h2 class="caption">
+				<span class="caption__var caption__var--a" 
+					:class="{captionVarError: arrows.a.inputError}">{{ arrows.a.value }}</span>
+				 + 
+				<span class="caption__var caption__var--b"
+					:class="{captionVarError: arrows.b.inputError}">{{ arrows.b.value }}</span>
+				 = 
+				<input class="caption__input" id="caption__input"
+					type="text"
+					:class="{caption__input_error: caption.result.inputError, caption__input_block: caption.result.inputBlock}"
+					:disabled="caption.result.disabled"
+					:value="caption.result.value"
+					@input="checkResult($event.target.value)"
+					>
+			</h2>
+
+			<div class="arrow__wrapper">
+				<div class="arrow arrowA" :style="{ width: arrows.a.width + 'px'}">
+					<input class="arrow__input" 
+						v-focus="{active: arrows.a.focus}"
+						@input="arrowInputA($event.target.value)"
+						:class="{arrowInputError: arrows.a.inputError, arrowInputBlock: arrows.a.inputBlock}"
+						:disabled="arrows.a.inputBlock"
+						>
+					<img src="img/arrow.svg" width="100%">
+				</div>
+
+				<div class="arrow arrowB" 
+					:style="{ width: arrows.b.width + 'px'}" 
+					v-if="arrows.b.show"
+					>
+					<input class="arrow__input"
+						@input="arrowInputB($event.target.value)"
+						:class="{arrowInputError: arrows.b.inputError, arrowInputBlock: arrows.b.inputBlock}"
+						:disabled="arrows.b.inputBlock"
+						v-focus="{active: arrows.b.focus}"
+						>
+					<img src="img/arrow.svg" width="100%">
+				</div>
+			</div>
+			<img src="img/sprite.png" class="ruler" width="875" height="83"></img>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
